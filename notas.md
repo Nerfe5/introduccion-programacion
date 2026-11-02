@@ -20,8 +20,10 @@
 
 ## Semana 2
 
-- **Inicio de la semana (2 de noviembre):** revisé el video de la Unidad 2 a partir de sus diapositivas: elementos básicos de C, `printf()`/`scanf()`, variables y constantes, y el desafío de una calculadora básica en Dev-C++. Cierro cada semana los lunes y ese mismo día empiezo la siguiente.
-- **Pendiente:** confirmar si el desafío de la calculadora es entregable y qué actividades se piden en esta semana.
+- **Inicio de la semana (2 de noviembre):** llegó la consigna de la actividad colaborativa, que sigue siendo de la Unidad 1: investigación sobre decimal, binario y hexadecimal, conversión del número 50, codificación ASCII, un ejemplo práctico y una situación práctica con un caso de microcontroladores.
+- **Video de la Unidad 2 (lenguaje C):** lo revisé el 2 de noviembre a partir de sus diapositivas. Según el calendario del aula, la Unidad 2 inicia en la Semana 3 (9 de noviembre), así que lo tomo como adelanto: elementos básicos de C, `printf()`/`scanf()`, variables y constantes, y el desafío de una calculadora básica en Dev-C++.
+- **Pendiente:** conseguir la rúbrica, la fecha límite y el formato exacto de la actividad.
+- Cierro cada semana los lunes y ese mismo día empiezo la siguiente.
 
 ---
 
@@ -29,5 +31,6 @@
 
 - [x] Publicar la participación del Foro 1.
 - [x] Publicar las respuestas del espacio colaborativo (caso `0x1F`).
-- [ ] Semana 2: revisar el desafío de la calculadora en C y confirmar si es entregable.
+- [ ] Semana 2: revisar la rúbrica y preparar la actividad de la Unidad 1.
+- [ ] Semana 3: revisar si el desafío de la calculadora en C es entregable.
 - [ ] Confirmar el formato de entrega con la docente.

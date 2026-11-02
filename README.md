@@ -122,9 +122,25 @@ Los comandos permiten interactuar con el sistema operativo sin interfaz gráfica
 
 ---
 
-## 🧭 Semana 2 — Lenguaje de programación C
+## 🧭 Semana 2 — Conceptos fundamentales de programación (continuación de la Unidad 1)
 
-> Resumen elaborado a partir del video y la presentación de la semana "U2. Lenguaje de programación C" (2 de noviembre de 2026). Cubre lo que muestran las diapositivas; no incluye lo que se explica solo de forma oral.
+> Actividad colaborativa de la semana (inicia el 2 de noviembre de 2026), con apoyo del asesor académico virtual. Se entrega en el formato institucional, en Word o PDF.
+
+### 📝 Qué pide la actividad
+
+1. **Investigación teórica:** diferencias entre los sistemas decimal, binario y hexadecimal y cómo se usa la base en cada uno.
+2. **Conversión práctica:** lógica y procedimiento de decimal a binario y viceversa, con el ejemplo completo del número 50.
+3. **Codificación de caracteres:** qué es ASCII y cómo se relaciona con el binario y el hexadecimal.
+4. **Justificación:** un ejemplo práctico en que la conversión de decimal a binario sea crucial (un transistor, un semáforo simple).
+5. **Situación práctica:** plantear un escenario propio o resolver el caso de una empresa de microcontroladores que migra los registros de sus logs de binario de 8 bits a hexadecimal (valor ASCII 107: binario, hexadecimal, eficiencia y reflexión de al menos 5 líneas).
+
+*(Pendientes por confirmar: rúbrica, fecha límite, límite de cuartillas, si el membrete cuenta como imagen y si hay que evidenciar el uso del asesor virtual.)*
+
+---
+
+## 🔭 Adelanto de la Unidad 2 — Lenguaje de programación C (inicia en la Semana 3, 9 de noviembre)
+
+> Resumen elaborado a partir del video y la presentación "U2. Lenguaje de programación C", revisados el 2 de noviembre de 2026, antes de que inicie la Unidad 2. Cubre lo que muestran las diapositivas; no incluye lo que se explica solo de forma oral.
 
 ### 🧪 Elementos básicos del lenguaje C
 
@@ -139,13 +155,11 @@ Los comandos permiten interactuar con el sistema operativo sin interfaz gráfica
 - ¿Por qué el lenguaje C es ampliamente utilizado en el desarrollo de sistemas embebidos y de bajo nivel?
 - ¿Qué problemas pueden presentarse en un programa si no se comprenden correctamente los tipos de datos y las variables?
 
-### 📝 Actividades de la semana
+### 📝 Desafío planteado en el video
 
-- **Desafío en clase:** desarrollar una calculadora básica en C que realice suma, resta, multiplicación y división entre dos números, y que se ejecute correctamente en Dev-C++. *(Por confirmar si es entregable.)*
-- **Ruta hacia el éxito profesional (foro):** la presentación muestra preguntas sobre sistemas de numeración y comandos y sobre el binario frente al decimal. *(Por confirmar si corresponde a esta semana o repite las de la Semana 1.)*
-- **Actividades clave según la presentación:** participar en la Ruta, desarrollar la actividad entregable, responder el examen y realizar la actividad de la semana 2 con el asistente virtual.
+- Desarrollar una calculadora básica en C que realice suma, resta, multiplicación y división entre dos números, y que se ejecute correctamente en Dev-C++. *(Por confirmar cuándo se pide y si es entregable.)*
 
-### 🔑 Palabras clave de la semana
+### 🔑 Palabras clave del adelanto
 
 `Lenguaje C` · `Compilado` · `printf()` · `scanf()` · `Variable` · `Constante` · `Dev-C++`
 
@@ -156,7 +170,7 @@ Los comandos permiten interactuar con el sistema operativo sin interfaz gráfica
 - [x] Semana 1 — espacio colaborativo: respuestas publicadas en la publicación del video (caso `0x1F` y binario frente a números romanos)
 - [x] Semana 1 — Foro 1: participación publicada (sistemas de numeración y conversión de 200 a binario, con cita y referencia)
 - [x] Semana 1 — Foro 1: comentario a la publicación de un compañero; foro cerrado de mi lado el 2 de noviembre
-- [ ] Semana 2 — *(inicia el 2 de noviembre; actividades por confirmar)*
+- [ ] Semana 2 — actividad colaborativa de la Unidad 1 (sistemas de numeración y ASCII)
 - [ ] Semana 3 — *(por definir)*
 - [ ] Semana 4 — *(por definir)*
 - [ ] Semana 5 — *(por definir)*
@@ -172,11 +186,7 @@ Los comandos permiten interactuar con el sistema operativo sin interfaz gráfica
 - *U1. Conceptos fundamentales de programación* [Diapositivas del curso, Semana 1]. (2026).
 - Jiménez Murillo, J. A. (2009). *Matemáticas para la computación*. Alfaomega.
 
-**Semana 2**
-
-- *U2. Lenguaje de programación C* [Video y diapositivas del curso, Semana 2]. (2026).
-
-Referencias que cita la presentación de la Semana 2:
+**Adelanto de la Unidad 2.** *U2. Lenguaje de programación C* [Video y diapositivas del curso]. (2026). Referencias que cita la presentación:
 
 - Kernighan, B. W., y Ritchie, D. M. (1988). *The C programming language* (2.ª ed.). Prentice Hall.
 - Deitel, P., y Deitel, H. (2016). *C how to program* (8.ª ed.). Pearson.

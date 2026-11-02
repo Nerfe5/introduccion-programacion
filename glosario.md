@@ -1,6 +1,6 @@
 # 📖 Glosario — Introducción a la Programación
 
-`🔵 Materia: Introducción a la Programación` &nbsp;·&nbsp; `📅 Actualizado: Semana 2`
+`🔵 Materia: Introducción a la Programación` &nbsp;·&nbsp; `📅 Actualizado: Semana 2 (con adelanto de la Unidad 2)`
 
 > Definiciones construidas a partir del material de cada semana. Los términos están agrupados por semana y, dentro de cada una, en orden alfabético.
 
@@ -40,7 +40,7 @@ Sistema de numeración en el que el valor de un símbolo depende del lugar que o
 
 ---
 
-## Semana 2 — Lenguaje de programación C
+## Adelanto de la Unidad 2 — Lenguaje de programación C
 
 ### Compilado
 Característica de C: el código fuente se traduce a un programa ejecutable antes de correr.
