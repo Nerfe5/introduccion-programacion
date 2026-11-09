@@ -28,7 +28,9 @@
 - **Presentación en PDF (9 de noviembre):** con la versión en PDF completé la guía de comandos multiplataforma (Linux/macOS, CMD y PowerShell) y la solución oficial del desafío de la pasarela de pagos.
 - **Tarea 2 (9 de noviembre):** elaboré el documento resolviendo el caso de la empresa de microcontroladores. Lo ajusté a la rúbrica: la primera versión ocupaba 6 páginas, así que condensé el contenido temático (tablas de divisiones en horizontal, menos ejemplos ASCII y el semáforo como texto) hasta dejarlo en 5. Verifiqué todas las conversiones con código y la cita textual con su página (Jiménez Murillo, 2009, p. 5). El membrete quedó solo con texto porque no tenía a mano la plantilla con logo.
 - **Decisión sobre referencias:** me quedé con Jiménez Murillo (2009) y Cerf (1969). Una tercera fuente sobre electrónica digital habría respaldado el ejemplo del semáforo, pero el documento ya cumple la rúbrica.
-- **Pendiente:** subir la Tarea 2; confirmar qué es el avance 2 del trabajo final y las evidencias de competencias.
+- **Entrega:** subí la Tarea 2 el 9 de noviembre; el aula la marca como enviada.
+- **Aclaración de modalidad:** en actividades colaborativas no presento exámenes ni trabajo final; esos elementos de la presentación corresponden a otra modalidad.
+- **Ruta, primera estación (9 de noviembre):** publiqué mis respuestas en "Navegando hacia el saber": convertí 0x2A = 42 y 0xFE = 254, y propuse `mkdir`, `mv` con comodines y `ls -la` para aislar los archivos. El asistente virtual ya la retroalimentó. Con esto cerré la Semana 2.
 - Cierro cada semana los lunes y ese mismo día empiezo la siguiente.
 
 ---
@@ -38,6 +40,7 @@
 - [x] Publicar la participación del Foro 1.
 - [x] Publicar las respuestas del espacio colaborativo (caso `0x1F`).
 - [x] Semana 2: revisar la rúbrica y preparar la Tarea 2.
-- [ ] Semana 2: subir la Tarea 2 antes del 11 de noviembre.
+- [x] Semana 2: subir la Tarea 2 (entregada el 9 de noviembre).
+- [x] Semana 2: participar en la Ruta, primera estación ("Navegando hacia el saber").
 - [ ] Semana 3: revisar si el desafío de la calculadora en C es entregable.
 - [ ] Confirmar el formato de entrega con la docente.

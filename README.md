@@ -208,9 +208,18 @@ En plena temporada de ofertas, la pasarela de pagos registra errores con código
 
 *(En la versión en PDF, la presentación resuelve con `mkdir cuarentena`, `mv *0x1F* *0xFF* cuarentena/` y `ls -la cuarentena`, desde `/var/log/pagos/`. Describe el 0x1F como un bloqueo de nivel bajo o moderado, aunque por la regla del desafío 31 ya supera el umbral de 30.)*
 
+#### Ruta hacia el éxito profesional: primera estación ("Navegando hacia el saber")
+
+Caso de una red de sensores en una ciudad inteligente con dos alertas en hexadecimal.
+
+| Pregunta | Mi respuesta |
+|---|---|
+| ¿A qué valores decimales equivalen `0x2A` y `0xFE`? | `0x2A` = 2 × 16¹ + 10 × 16⁰ = **42**; `0xFE` = 15 × 16¹ + 14 × 16⁰ = **254**, a una unidad del máximo de un byte (255). |
+| ¿Qué comandos aíslan los archivos sin apagar el servidor? | `mkdir auditoria_ambiental` → `mv *0x2A* *0xFE* auditoria_ambiental/` → `ls -la auditoria_ambiental` |
+
 #### Actividades clave según la presentación
 
-Actividad de la Semana 2 con el asesor académico virtual, examen 2, preparar la entrega del **avance 2 del trabajo final** y preparar el envío de evidencias de competencias. *(Por confirmar qué es el avance 2 y cuándo se entrega.)*
+Actividad de la Semana 2 con el asesor académico virtual, examen 2, avance 2 del trabajo final y evidencias de competencias. *(En la modalidad de actividades colaborativas solo aplica la actividad de la semana; el examen y el trabajo final corresponden a otra modalidad.)*
 
 ---
 
@@ -246,8 +255,8 @@ Actividad de la Semana 2 con el asesor académico virtual, examen 2, preparar la
 - [x] Semana 1 — espacio colaborativo: respuestas publicadas en la publicación del video (caso `0x1F` y binario frente a números romanos)
 - [x] Semana 1 — Foro 1: participación publicada (sistemas de numeración y conversión de 200 a binario, con cita y referencia)
 - [x] Semana 1 — Foro 1: comentario a la publicación de un compañero; foro cerrado de mi lado el 2 de noviembre
-- [ ] Semana 2 — Tarea 2 (sistemas de numeración y ASCII): documento listo, 5 cuartillas; subir antes del 11 de noviembre a las 23:55
-- [ ] Semana 2 — examen 2, avance 2 del trabajo final y evidencias de competencias *(por confirmar)*
+- [x] Semana 2 — Tarea 2 (sistemas de numeración y ASCII): entregada el 9 de noviembre (5 cuartillas)
+- [x] Semana 2 — Ruta hacia el éxito profesional, "Navegando hacia el saber" (primera estación): publicada el 9 de noviembre y retroalimentada por el asistente virtual
 - [ ] Semana 3 — *(por definir)*
 - [ ] Semana 4 — *(por definir)*
 - [ ] Semana 5 — *(por definir)*
