@@ -8,6 +8,9 @@
 
 ## Semana 1 — Conceptos fundamentales de programación
 
+### ASCII
+Código estándar que asigna un número a cada letra, dígito, signo y carácter de control. Usa 7 bits (128 posiciones) y se transmite en un byte con el bit más alto en 0. Ejemplo: la letra k es 107 = 01101011 = 0x6B.
+
 ### Base (de un sistema de numeración)
 Cantidad de símbolos diferentes que usa un sistema numérico: 10 en el decimal, 2 en el binario, 8 en el octal y 16 en el hexadecimal.
 
@@ -17,8 +20,14 @@ Sistema de base 2 que usa solo 0 y 1 (apagado y encendido); es la base del funci
 ### Bit
 Cada dígito del sistema binario.
 
+### Byte
+Grupo de 8 bits. Su valor máximo es 11111111 en binario, que equivale a FF en hexadecimal y a 255 en decimal.
+
 ### Comandos
 Instrucciones que permiten interactuar con el sistema operativo sin interfaz gráfica; ofrecen rapidez, precisión y automatización. Ejemplos: `ls`, `cd`, `mkdir`, `rm`, `cp` y `mv`.
+
+### Comodín (`*`)
+Símbolo que en la terminal representa cualquier secuencia de caracteres. Ejemplo: `mv *0xFF* cuarentena/` mueve todos los archivos cuyo nombre contiene `0xFF`.
 
 ### Conversión de decimal a binario
 Procedimiento de divisiones sucesivas entre 2: se anotan los residuos y se leen en orden contrario al que se obtuvieron. Ejemplo: 200 (decimal) = 11001000 (binario).
@@ -28,6 +37,9 @@ Carpeta del sistema de archivos que agrupa archivos y otras carpetas. Con comand
 
 ### Hexadecimal (sistema de numeración)
 Sistema de base 16 con los símbolos 0–9 y A–F (A = 10 … F = 15) que representa grandes cantidades binarias de forma compacta. Ejemplo: FF = 255 en decimal. Se usa en direcciones de memoria, colores HTML y CSS, depuración e identificadores de hardware.
+
+### Prefijo `0x`
+Marca que indica que el número que sigue está escrito en hexadecimal. Ejemplo: `0x6B` = 107 en decimal.
 
 ### Sistema aditivo
 Sistema de numeración en el que se suman los valores de los símbolos y la posición no importa. Ejemplos: el egipcio y el romano (XVI = 10 + 5 + 1 = 16).

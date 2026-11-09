@@ -32,3 +32,10 @@ Si la calificación no es la esperada, se puede subir una segunda versión para 
 
 - El checklist pide **solo texto**, pero el formato institucional de la materia anterior llevaba logo en el encabezado y portada con fondo. Confirmar con la docente si el membrete cuenta como imagen. Hasta entonces, evitar capturas y figuras; el código y sus resultados se escriben como texto.
 - Aplicar la lección de la materia anterior: **leer la rúbrica y contar las cuartillas antes de entregar**.
+
+## 📝 Cómo se entregó la Tarea 2
+
+- La consigna pidió explícitamente el **formato institucional**; se usó con el membrete hecho solo con texto (sin logo), lo que también cumple el "solo texto" del checklist.
+- Rúbrica igual a la de la última actividad de la materia anterior: máximo 5 cuartillas en total y la situación práctica en máximo 2, incluyendo referencias.
+- Nombre del archivo con el patrón del checklist: `ApellidoNombre_matrícula_Tarea2`, en `.docx` y `.pdf`.
+- Sin hipervínculos: la URL de la referencia del RFC 20 va en texto plano.

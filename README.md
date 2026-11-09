@@ -134,7 +134,83 @@ Los comandos permiten interactuar con el sistema operativo sin interfaz gráfica
 4. **Justificación:** un ejemplo práctico en que la conversión de decimal a binario sea crucial (un transistor, un semáforo simple).
 5. **Situación práctica:** plantear un escenario propio o resolver el caso de una empresa de microcontroladores que migra los registros de sus logs de binario de 8 bits a hexadecimal (valor ASCII 107: binario, hexadecimal, eficiencia y reflexión de al menos 5 líneas).
 
-*(Pendientes por confirmar: rúbrica, fecha límite, límite de cuartillas, si el membrete cuenta como imagen y si hay que evidenciar el uso del asesor virtual.)*
+**Entrega:** cierra el 11 de noviembre de 2026 a las 23:55 y la califica el asistente del docente. Según la rúbrica, el documento completo no debe pasar de 5 cuartillas y la situación práctica va después del contenido temático, en máximo 2 cuartillas incluyendo las referencias.
+
+### ✅ Cómo resolví la Tarea 2
+
+Documento de **5 cuartillas**: portada, 2 de contenido temático y 2 de situación práctica con las referencias.
+
+| Punto | Resolución |
+|---|---|
+| Diferencias entre sistemas | Tabla comparativa de base, símbolos, ejemplo de valor posicional y uso; el hexadecimal como forma abreviada del binario (16 = 2⁴, cada dígito equivale a 4 bits). |
+| Conversión del 50 | Divisiones sucesivas entre 2: **50 = 110010** (00110010 en un byte); de vuelta: 32 + 16 + 2 = 50. |
+| ASCII | Código de 7 bits con 128 posiciones que se transmite en un byte con el bit más alto en 0. Ejemplos: A = 65 = 0x41, a = 97 = 0x61, el carácter "0" = 48 = 0x30. |
+| Justificación | Semáforo con cada luz en un bit: alto = 1 (001), precaución = 2 (010), siga = 4 (100); escribir 3 (011) encendería dos luces a la vez. |
+| Caso de la empresa de microcontroladores | ASCII 107 = **01101011** = **0x6B** = letra **k**; de 8 caracteres a 2 en los logs (75 % menos), más legibles; el dato en memoria sigue siendo el mismo byte. |
+| Reflexión | Eficiencia (límite de 255 en un byte), seguridad (leer bien un código como 0x1F = 31) y manipulación correcta (el carácter "7" vale 55). |
+
+Referencias usadas: Jiménez Murillo (2009) y Cerf (1969). Todas las conversiones se verificaron con código antes de entregar.
+
+### 🧑‍🏫 Clase 2 — Administración de archivos y carpetas con comandos
+
+> Resumen elaborado a partir del texto de la presentación "U1. Conceptos fundamentales de programación, segunda parte" (Semana 2). Las tablas de comandos se completaron con la versión en PDF de la presentación.
+
+- **Resultados de aprendizaje:** reconocer los principales sistemas de numeración y generalizar su uso.
+- **Competencia:** interpretar los sistemas de numeración con los métodos matemáticos adecuados para resolver problemas lógicos relacionados con la programación.
+- **Situación práctica:** el servidor de una planta tratadora de agua se queda sin espacio en pleno monitoreo y la única vía de rescate es la terminal. Las boyas telemétricas y las válvulas generan cientos de archivos `.log` sin clasificar en `/telemetria/`, y hay que ordenarlos con comandos antes de perder información.
+- **Temas:** qué es un comando y cómo funciona, y comandos multiplataforma.
+- **Reflexiones de la Ruta (Clase 2):** ¿cuál es la importancia de que exista diversidad en los sistemas numéricos para la programación? y ¿por qué no se puede implementar cualquier sistema numérico en la programación?
+
+#### Guía de comandos multiplataforma
+
+**Navegación y operaciones con archivos**
+
+| Objetivo | Linux / macOS | Windows CMD | Windows PowerShell |
+|---|---|---|---|
+| Ruta actual | `pwd` | `cd` | `Get-Location` (alias `pwd`) |
+| Listar contenido | `ls` | `dir` | `Get-ChildItem` (alias `dir` / `ls`) |
+| Listado detallado y ocultos | `ls -la` | `dir /a` | `Get-ChildItem -Force` |
+| Acceder a un directorio | `cd [ruta]` | `cd [ruta]` | `Set-Location [ruta]` (alias `cd`) |
+| Regresar a la carpeta padre | `cd ..` | `cd ..` | `cd ..` |
+| Crear carpeta | `mkdir [nombre]` | `mkdir [nombre]` | `New-Item -Type Directory [nombre]` |
+| Crear archivo vacío | `touch [archivo]` | `type nul > [archivo]` | `New-Item -Type File [archivo]` |
+| Copiar | `cp [origen] [destino]` | `copy [origen] [destino]` | `Copy-Item [origen] [destino]` |
+| Mover o renombrar | `mv [viejo] [nuevo]` | `move [viejo] [nuevo]` | `Move-Item [viejo] [nuevo]` |
+| Eliminar archivo | `rm [archivo]` | `del [archivo]` | `Remove-Item [archivo]` |
+| Eliminar carpeta completa | `rm -rf [carpeta]` | `rd /s /q [carpeta]` | `Remove-Item -Recurse -Force` |
+
+> ⚠️ `rm` borra de forma permanente, sin pasar por la papelera.
+
+**Redes y control del servidor**
+
+| Objetivo | Linux / macOS | Windows CMD / PowerShell |
+|---|---|---|
+| IP local | `ip a` (o `ifconfig`) | `ipconfig` |
+| Prueba de conectividad | `ping -c 4 [host]` | `ping [host]` |
+| Trazar ruta | `traceroute [host]` | `tracert [host]` |
+| Diagnóstico DNS | `dig [host]` | `nslookup [host]` |
+| Puertos activos | `ss -tuln` (o `netstat -tuln`) | `netstat -ano` |
+| Monitorear CPU y RAM | `top` (o `htop`) | `tasklist` |
+| Terminar un proceso | `kill -9 [PID]` | `taskkill /F /PID [PID]` |
+| Consumo de disco | `df -h` | `wmic logicaldisk get size,freespace` |
+| Memoria disponible | `free -m` | `Get-CimInstance Win32_OperatingSystem \| Select FreePhysicalMemory` |
+
+#### Desafío en clase: auditoría de seguridad en una pasarela de pagos
+
+En plena temporada de ofertas, la pasarela de pagos registra errores con códigos hexadecimales en `/var/log/pagos/`. Regla: si el código supera 30, es un intento de inyección SQL.
+
+| Paso | Solución |
+|---|---|
+| Decodificar los códigos | `0x1F` = 1 × 16¹ + 15 × 16⁰ = **31**; `0xFF` = 15 × 16¹ + 15 × 16⁰ = **255** (el valor máximo de un byte). Ambos superan 30. |
+| Crear la carpeta de cuarentena | `mkdir /var/log/pagos/cuarentena` |
+| Mover los archivos críticos | `mv /var/log/pagos/*0x1F* /var/log/pagos/*0xFF* /var/log/pagos/cuarentena/` |
+| Verificar | `ls /var/log/pagos/cuarentena/` |
+
+*(En la versión en PDF, la presentación resuelve con `mkdir cuarentena`, `mv *0x1F* *0xFF* cuarentena/` y `ls -la cuarentena`, desde `/var/log/pagos/`. Describe el 0x1F como un bloqueo de nivel bajo o moderado, aunque por la regla del desafío 31 ya supera el umbral de 30.)*
+
+#### Actividades clave según la presentación
+
+Actividad de la Semana 2 con el asesor académico virtual, examen 2, preparar la entrega del **avance 2 del trabajo final** y preparar el envío de evidencias de competencias. *(Por confirmar qué es el avance 2 y cuándo se entrega.)*
 
 ---
 
@@ -170,7 +246,8 @@ Los comandos permiten interactuar con el sistema operativo sin interfaz gráfica
 - [x] Semana 1 — espacio colaborativo: respuestas publicadas en la publicación del video (caso `0x1F` y binario frente a números romanos)
 - [x] Semana 1 — Foro 1: participación publicada (sistemas de numeración y conversión de 200 a binario, con cita y referencia)
 - [x] Semana 1 — Foro 1: comentario a la publicación de un compañero; foro cerrado de mi lado el 2 de noviembre
-- [ ] Semana 2 — actividad colaborativa de la Unidad 1 (sistemas de numeración y ASCII)
+- [ ] Semana 2 — Tarea 2 (sistemas de numeración y ASCII): documento listo, 5 cuartillas; subir antes del 11 de noviembre a las 23:55
+- [ ] Semana 2 — examen 2, avance 2 del trabajo final y evidencias de competencias *(por confirmar)*
 - [ ] Semana 3 — *(por definir)*
 - [ ] Semana 4 — *(por definir)*
 - [ ] Semana 5 — *(por definir)*
@@ -185,6 +262,11 @@ Los comandos permiten interactuar con el sistema operativo sin interfaz gráfica
 
 - *U1. Conceptos fundamentales de programación* [Diapositivas del curso, Semana 1]. (2026).
 - Jiménez Murillo, J. A. (2009). *Matemáticas para la computación*. Alfaomega.
+
+**Semana 2**
+
+- *U1. Conceptos fundamentales de programación, segunda parte* [Presentación del curso, Semana 2]. (2026).
+- Cerf, V. G. (1969). *ASCII format for network interchange* (RFC 20). Network Working Group. https://www.rfc-editor.org/rfc/rfc20
 
 **Adelanto de la Unidad 2.** *U2. Lenguaje de programación C* [Video y diapositivas del curso]. (2026). Referencias que cita la presentación:
 

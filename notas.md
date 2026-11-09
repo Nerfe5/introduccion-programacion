@@ -22,7 +22,13 @@
 
 - **Inicio de la semana (2 de noviembre):** llegó la consigna de la actividad colaborativa, que sigue siendo de la Unidad 1: investigación sobre decimal, binario y hexadecimal, conversión del número 50, codificación ASCII, un ejemplo práctico y una situación práctica con un caso de microcontroladores.
 - **Video de la Unidad 2 (lenguaje C):** lo revisé el 2 de noviembre a partir de sus diapositivas. Según el calendario del aula, la Unidad 2 inicia en la Semana 3 (9 de noviembre), así que lo tomo como adelanto: elementos básicos de C, `printf()`/`scanf()`, variables y constantes, y el desafío de una calculadora básica en Dev-C++.
-- **Pendiente:** conseguir la rúbrica, la fecha límite y el formato exacto de la actividad.
+- **Rúbrica y fecha:** la actividad cierra el 11 de noviembre a las 23:55. La rúbrica es la misma que usé en la última actividad del bimestre anterior: máximo 5 cuartillas en total y la situación práctica en máximo 2, incluyendo referencias.
+- **Fuente para ASCII:** el capítulo de la lectura no trata ASCII, así que localicé el RFC 20 (Cerf, 1969), que describe el código de 7 bits.
+- **Presentación de la Clase 2:** extraje su texto (las tablas de comandos son imágenes): administración de archivos con comandos, el caso de la planta tratadora y el desafío de la pasarela de pagos (0x1F = 31, 0xFF = 255; `mkdir`, `mv` con comodines y `ls`).
+- **Presentación en PDF (9 de noviembre):** con la versión en PDF completé la guía de comandos multiplataforma (Linux/macOS, CMD y PowerShell) y la solución oficial del desafío de la pasarela de pagos.
+- **Tarea 2 (9 de noviembre):** elaboré el documento resolviendo el caso de la empresa de microcontroladores. Lo ajusté a la rúbrica: la primera versión ocupaba 6 páginas, así que condensé el contenido temático (tablas de divisiones en horizontal, menos ejemplos ASCII y el semáforo como texto) hasta dejarlo en 5. Verifiqué todas las conversiones con código y la cita textual con su página (Jiménez Murillo, 2009, p. 5). El membrete quedó solo con texto porque no tenía a mano la plantilla con logo.
+- **Decisión sobre referencias:** me quedé con Jiménez Murillo (2009) y Cerf (1969). Una tercera fuente sobre electrónica digital habría respaldado el ejemplo del semáforo, pero el documento ya cumple la rúbrica.
+- **Pendiente:** subir la Tarea 2; confirmar qué es el avance 2 del trabajo final y las evidencias de competencias.
 - Cierro cada semana los lunes y ese mismo día empiezo la siguiente.
 
 ---
@@ -31,6 +37,7 @@
 
 - [x] Publicar la participación del Foro 1.
 - [x] Publicar las respuestas del espacio colaborativo (caso `0x1F`).
-- [ ] Semana 2: revisar la rúbrica y preparar la actividad de la Unidad 1.
+- [x] Semana 2: revisar la rúbrica y preparar la Tarea 2.
+- [ ] Semana 2: subir la Tarea 2 antes del 11 de noviembre.
 - [ ] Semana 3: revisar si el desafío de la calculadora en C es entregable.
 - [ ] Confirmar el formato de entrega con la docente.
